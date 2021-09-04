@@ -99,7 +99,7 @@ function isItSummer(month: Month) {
 }
 //console.log(isItSummer(Month.Jun)); // true
 
-//2
+//Example 2
 enum ApprovalStatus {
   draft,
   submitted,
@@ -119,6 +119,21 @@ if (request.status === ApprovalStatus.approved) {
 }
 
 //----- Any -----
+
+//Example 1
+// json may come from a third-party API
+const json = `{"latitude": 10.11, "longitude":12.12}`;
+
+// parse JSON to find location
+const currentLocation = JSON.parse(json);
+console.log(currentLocation);
+
+
+//Example 2
+let result: any;
+result = "123";
+
+//----- Void -----
 
 //----- Never -----
 
