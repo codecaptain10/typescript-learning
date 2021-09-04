@@ -135,6 +135,14 @@ result = "123";
 
 //----- Void -----
 
+//Good practice for functions
+function log(message): void {
+  console.log(message);
+}
+
+//Bad practice for variables, 
+let yourResult: void;
+
 //----- Never -----
 
 //----- Union -----
