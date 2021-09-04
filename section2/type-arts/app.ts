@@ -47,6 +47,14 @@ employee2 = {
 
 //----- Array -----
 
+//Arra with strings
+let skills: string[];
+skills = ['Problem Sovling', 'Software Design', 'Programming'];
+
+//Array with strings and numbers
+let scores: (string | number)[];
+scores = ['Programming', 5, 'Software Design', 4];
+
 //----- Tuple -----
 
 //----- Enum -----
