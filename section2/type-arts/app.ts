@@ -57,6 +57,14 @@ scores = ['Programming', 5, 'Software Design', 4];
 
 //----- Tuple -----
 
+//Tuple is an array with static number of elements and their types
+//Good to present value pair
+let skill: [string, number];
+skill = ['Programming', 5];
+
+//Color in CSS
+let color: [number, number, number] = [255, 0, 0];
+
 //----- Enum -----
 
 //----- Any -----
