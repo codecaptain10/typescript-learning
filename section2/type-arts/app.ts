@@ -145,6 +145,9 @@ let yourResult: void;
 
 //----- Never -----
 
+function raiseError(message: string): never {
+  throw new Error(message);
+}
 //----- Union -----
 
 //----- Type Aliases -----
