@@ -168,7 +168,21 @@ function add(a: number | string, b: number | string) {
 }
 
 
-
 //----- Type Aliases -----
 
+//Example 1
+type chars = string;
+let messsage: chars; // same as string type
+
+//Example 2
+type alphanumeric = string | number;
+let input: alphanumeric;
+input = 100; // valid
+input = 'Hi'; // valid
+//input = false; // Compiler error
+
 //----- String Literal Types -----
+
+let click: 'click';
+//click = 'click'; // OK
+//click = 'Blablabla' //Error
