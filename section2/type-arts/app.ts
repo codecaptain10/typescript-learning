@@ -3,8 +3,8 @@
 let price: number;
 price = 9.95;
 //type bigint
-let big: bigint;
-big = 9007199254740991n;
+//let big: bigint;
+//big = 9007199254740991n;
 
 //----- String -----
 
