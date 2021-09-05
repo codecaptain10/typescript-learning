@@ -84,6 +84,23 @@ for (let i = 0; i < 10; i++) {
 
 // ----- while loop -----
 
+//Example 1
+let count = 0;
+
+while (count < 5) {
+  console.log(count);
+  count++;
+}
+
+//Example 2
+let list = document.querySelector('#list');
+
+while (list.firstChild) {
+  list.removeChild(list.firstChild);
+}
+
+
+
 // ----- do while loop -----
 
 // ----- break -----
