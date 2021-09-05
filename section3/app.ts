@@ -152,3 +152,17 @@ console.log(products[i]);
 
 // console.log(`There is a ${discount}% on ${product.name}.`);
 
+// ----- continue -----
+
+let index = -1;
+
+while (index < 9) {
+
+  index = index + 1;
+
+  if (index % 2)
+    continue;
+
+  console.log(index);
+}
+
