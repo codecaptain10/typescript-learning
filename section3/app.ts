@@ -78,6 +78,10 @@ console.log(`The month ${month} in ${year} has ${day} days`);
 
 // ----- for loop -----
 
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+
 // ----- while loop -----
 
 // ----- do while loop -----
