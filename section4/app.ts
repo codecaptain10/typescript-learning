@@ -87,14 +87,14 @@ function getTotal(...numbers: number[]): number {
 
 
 // ------- Funtions Overloadings -------
-//Overloading
+//Overloading addVariables() function
 function addVariables(a: number, b: number): number;
 function addVariables(a: string, b: string): string;
 function addVariables(a: any, b: any): any {
   return a + b;
 }
 
-//Overloading with optional parameters
+//Overloading sum() function with optional parameters
 function sum(a: number, b: number): number;
 function sum(a: number, b: number, c: number): number;
 function sum(a: number, b: number, c?: number): number {
@@ -102,7 +102,7 @@ function sum(a: number, b: number, c?: number): number {
   return a + b;
 }
 
-//Overloading count() in class Connter
+//Overloading count() method in class Connter
 class Counter {
   private current: number = 0;
   count(): number;
