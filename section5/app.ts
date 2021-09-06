@@ -68,8 +68,48 @@ class Birthday {
 
 // ------- Getters & Setters -------
 
+class Student {
+  private age: number;
+  private firstName: string;
+  private lastName: string;
 
+  public getAge() {
+    return this.age;
+  }
 
+  public setAge(newAge: number) {
+    if (newAge <= 0 || newAge >= 200) {
+      throw new Error('The age is invalid');
+    }
+    this.age = newAge;
+  }
+
+  public getFirstName() {
+    return this.firstName;
+  }
+
+  public setFirstName(newFirstName: string) {
+    if (!newFirstName) {
+      throw new Error('Invalid first name.');
+    }
+    this.firstName = newFirstName;
+  }
+
+  public getLastName() {
+    return this.lastName;
+  }
+
+  public setLastName(newLastName: string) {
+    if (!newLastName) {
+      throw new Error('Invalid last name.');
+    }
+    this.lastName = newLastName;
+  }
+
+  public getFullName(): string {
+    return `${this.firstName} ${this.lastName}`;
+  }
+}
 
 // ------- Inheritance -------
 
