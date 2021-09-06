@@ -24,6 +24,12 @@ function addTwoNumbers(a: number, b: number) {
 
 // ------- Funtions Types -------
 
+let addTwoVariables: (a: number, b: number) => number;
+
+addTwoVariables = function (x: number, y: number) {
+  return x + y;
+};
+
 // ------- Optional Parameters -------
 
 // ------- Default Parameters -------
