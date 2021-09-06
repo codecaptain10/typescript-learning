@@ -42,6 +42,33 @@ function multiply(a: number, b: number, c?: number): number {
 
 // ------- Default Parameters -------
 
+/*JavaScript Syntax
+function name(parameter1=defaultValue1,...) {
+   // do something
+}
+
+//Example
+function applyDiscount(price, discount = 0.05) {
+    return price * (1 - discount);
+}
+
+console.log(applyDiscount(100)); // 95
+*/
+
+/*TypeScript Syntax
+function name(parameter1:type=defaultvalue1, parameter2:type=defaultvalue2,...) {
+   // do something
+}
+*/
+
+//Example
+function applyDiscount(price: number, discount: number = 0.05): number {
+  return price * (1 - discount);
+}
+
+console.log(applyDiscount(100)); // 95
+
+
 // ------- Rest Parameters -------
 
 // ------- Funtions Overloadings -------
