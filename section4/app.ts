@@ -32,6 +32,14 @@ addTwoVariables = function (x: number, y: number) {
 
 // ------- Optional Parameters -------
 
+function multiply(a: number, b: number, c?: number): number {
+
+  if (typeof c !== 'undefined') {
+    return a * b * c;
+  }
+  return a * b;
+}
+
 // ------- Default Parameters -------
 
 // ------- Rest Parameters -------
