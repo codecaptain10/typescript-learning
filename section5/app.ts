@@ -1,5 +1,7 @@
 /*CLASSES */
 
+import { strict } from "yargs";
+
 // ------- Classes -------
 class Person {
   ssn: string;
@@ -18,6 +20,39 @@ class Person {
 }
 
 // ------- Access Modifers -------
+
+/*They are 3 access modifers:
+  - private
+  - public
+  - protected
+*/
+
+class Car {
+  private price: number;
+  private speed: number;
+  private color: string;
+
+  contructor(price: number, speed: number, color: string) {
+    this.price = price;
+    this.speed = speed;
+    this.color = color;
+  }
+
+  protected changePrice(newPrice: number): void {
+    this.price = newPrice;
+  }
+
+  protected changeSpeed(newSpeed: number): void {
+    this.speed = newSpeed;
+  }
+
+}
+
+class Audi extends Car {
+  private model: string;
+
+  changeSpeed;
+}
 
 
 // ------- Readonly Properties -------
