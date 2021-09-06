@@ -57,8 +57,18 @@ class Audi extends Car {
 
 // ------- Readonly Properties -------
 
+class Birthday {
+  readonly birthDate: Date;
+
+  constructor(birthDate: Date) {
+    this.birthDate = birthDate;
+  }
+}
+
 
 // ------- Getters & Setters -------
+
+
 
 
 // ------- Inheritance -------
