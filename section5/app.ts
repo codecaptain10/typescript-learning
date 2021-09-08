@@ -3,7 +3,7 @@
 import { strict } from "yargs";
 
 // ------- Classes -------
-class Person {
+class User {
   ssn: string;
   firstName: string;
   lastName: string;
@@ -112,6 +112,39 @@ class Student {
 }
 
 // ------- Inheritance -------
+
+class Person {
+  constructor(private firstName: string, private lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  getFullName(): string {
+    return `${this.firstName} ${this.lastName}`;
+  }
+  describe(): string {
+    return `This is ${this.firstName} ${this.lastName}.`;
+  }
+}
+
+class Employee extends Person {
+  constructor(
+    firstName: string,
+    lastName: string,
+    private jobTitle: string) {
+
+    // call the constructor of the Person class:
+    super(firstName, lastName);
+  }
+
+  describe(): string {
+    return super.describe() + `My Job is ${this.jobTitle}.`;
+  }
+}
+
+let employee = new Employee('John', 'Doe', 'Web Developer');
+
+console.log(employee.getFullName());
+console.log(employee.describe());
 
 
 // ------- Static methods & properties -------
