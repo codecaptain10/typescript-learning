@@ -148,5 +148,20 @@ console.log(employee.describe());
 
 
 // ------- Static methods & properties -------
+class Worker {
+  private static headcount: number = 0;
+
+  constructor(
+    private firstName: string,
+    private lastName: string,
+    private jobTitle: string) {
+
+    Worker.headcount++;
+  }
+
+  public static getHeadcount() {
+    return Worker.headcount;
+  }
+}
 
 // ------- Abstract Classes -------
