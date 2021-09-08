@@ -177,3 +177,12 @@ abstract class newEmployee {
     return `${this.fullName} makes ${this.getSalary()} a month.`;
   }
 }
+
+class FullTimeEmployee extends newEmployee {
+  constructor(firstName: string, lastName: string, private salary: number) {
+    super(firstName, lastName);
+  }
+  getSalary(): number {
+    return this.salary;
+  }
+}
