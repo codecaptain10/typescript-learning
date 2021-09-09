@@ -52,3 +52,37 @@ console.log(user.toJSON());
 
 
 // ------- Extending Interfaces -------
+
+//Interface extends interface
+interface A {
+  a(): void
+}
+
+interface B extends A {
+  b(): void
+}
+
+
+//Interface extends class
+class Control {
+  private state: boolean;
+}
+
+interface StatefulControl extends Control {
+  enable(): void
+}
+
+class Button extends Control implements StatefulControl {
+  enable() { }
+}
+class TextBox extends Control implements StatefulControl {
+  enable() { }
+}
+class Label extends Control { }
+
+
+// Error: cannot implement
+// class Chart implements StatefulControl {
+//   enable() { }
+
+// }
