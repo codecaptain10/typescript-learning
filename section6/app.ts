@@ -62,6 +62,16 @@ interface B extends A {
   b(): void
 }
 
+//Interface extends other interface
+interface C {
+  c(): void
+}
+
+interface D extends B, C {
+  d(): void
+}
+
+
 
 //Interface extends class
 class Control {
