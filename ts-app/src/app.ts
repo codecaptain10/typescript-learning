@@ -1,3 +1,5 @@
+import { hide } from "yargs";
+
 /* ---------- Hello World ---------- */
 let helloWorld: string = "Hello, World!";
 
@@ -67,3 +69,50 @@ let cid: any = 1;
 let customerId1 = <number>cid;
 //Way 2: as [type]
 let customerId2 = cid as number;
+
+/* ---------- Functions ---------- */
+function addNum(x: number, y: number): number {
+  return x + y;
+}
+
+function sayHello(): string {
+  return "Hello!";
+}
+
+const getValue = (value: number): number => {
+  return value;
+};
+
+function log(message: string | number): void {
+  console.log(message);
+}
+
+/* ---------- Interfaces ---------- */
+interface UserInterface {
+  id: number;
+  name: string;
+}
+
+const newUser: UserInterface = {
+  id: 1,
+  name: "John",
+};
+
+interface Point {
+  width: number;
+  height: number;
+}
+
+const point: Point = {
+  width: 1,
+  height: 2,
+};
+
+/* ---------- Function Interfaces ---------- */
+
+interface MathFunc {
+  (x: number, y: number): number;
+}
+
+const add: MathFunc = (x: number, y: number): number => x + y;
+const sub: MathFunc = (x: number, y: number): number => x - y;
