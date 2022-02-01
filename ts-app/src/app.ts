@@ -1,13 +1,9 @@
-//Variables
-let first_name: string = "Szymon";
-const age: number = 11135;
+/* ---------- Hello World ---------- */
+let helloWorld: string = "Hello, World!";
 
-console.log(`User:${first_name}, age: ${age}`);
-
-//DOM Elements
-let userName: HTMLHeadElement = document.querySelector(
-  ".name"
+let helloWorldDOMElement: HTMLHeadingElement = document.querySelector(
+  ".helloWorld"
 ) as HTMLHeadingElement;
-let userAge = document.querySelector(".age");
 
-userName.textContent = "User: " + first_name;
+helloWorldDOMElement.textContent = helloWorld;
+console.log(helloWorld);
