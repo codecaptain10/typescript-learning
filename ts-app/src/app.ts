@@ -191,3 +191,4 @@ function getArray<T>(items: T[]): T[] {
 
 let numArray = getArray<number>([1, 2, 3, 4]);
 let strArray = getArray<string>(["jack", "joe", "jill"]);
+let anyArray = getArray<any>([true, 1, "one"]);
