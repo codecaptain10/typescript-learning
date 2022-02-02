@@ -12,7 +12,29 @@ function main(): void {
   const operator: string = question("Enter operator: \n");
   const secondStr: string = question("Enter second number:\n");
 
-  console.log("Result:\n" + firstStr, operator, secondStr);
+  const valudInput: boolean =
+    isNumber(firstStr) && isOperator(operator) && isNumber(secondStr);
+  console.log(valudInput);
+
+  //console.log("Result:\n" + firstStr, operator, secondStr);
+}
+
+function isOperator(operator: string): boolean {
+  switch (operator) {
+    case "+":
+    case "-":
+    case "/":
+    case "*":
+      return true;
+    default:
+      return false;
+  }
+}
+
+function isNumber(str: string): boolean {
+  const mayBeNumber = parseInt(str);
+  const isNum: boolean = Boolean(!isNaN(mayBeNumber));
+  return isNum;
 }
 
 main();
