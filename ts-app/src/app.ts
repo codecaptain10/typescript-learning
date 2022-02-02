@@ -116,3 +116,58 @@ interface MathFunc {
 
 const add: MathFunc = (x: number, y: number): number => x + y;
 const sub: MathFunc = (x: number, y: number): number => x - y;
+
+/* ---------- Classes ---------- */
+class Person {
+  id: number;
+  name: string;
+
+  constructor(id: number, name: string) {
+    this.id = id;
+    this.name = name;
+  }
+}
+
+const szymon = new Person(1, "Szymon");
+const matt = new Person(2, "Matt");
+
+/* ---------- Data Modifieres ---------- */
+
+class Car {
+  private price: number;
+  protected mark: string;
+  public isFast: boolean;
+
+  constructor(carPrice: number, carMark: string, isCarFast: boolean) {
+    this.price = carPrice;
+    this.mark = carMark;
+    this.isFast = isCarFast;
+  }
+}
+
+const Audi = new Car(2000, "Audi", true);
+//console.log(Audi.price);
+//console.log(Audi.mark);
+//console.log(Audi.isFast)
+
+/* ---------- Implement Interface in Class ---------- */
+
+interface PerosnInterface {
+  id: number;
+  name: string;
+  register(): string;
+}
+
+class PersonClass implements PerosnInterface {
+  id: number;
+  name: string;
+
+  constructor(id: number, name: string) {
+    this.id = id;
+    this.name = name;
+  }
+
+  register() {
+    return `User ${this.name} is register.`;
+  }
+}
